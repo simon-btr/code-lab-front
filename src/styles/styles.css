@@ -1,0 +1,128 @@
+/* Reset minimal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /*background-color: #f5f7fa;*/
+  color: #333;
+}
+
+body, html, #root {
+  height: 100%;
+}
+
+.container {
+  max-width: 400px;
+  margin: 4rem auto;
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #2c3e50;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  background-color: #f5f7fa;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #0987f2;
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+button {
+  background-color: #0987f2;
+  color: white;
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+p.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+p.info-message {
+  color: #27ae60;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.resend-btn {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: #0987f2;
+  border: 2px solid #0987f2;
+  padding: 0.6rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.resend-btn:hover {
+  background-color: #0987f2;
+  color: white;
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.link-text a {
+  color: #0987f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 90%;
+    margin: 4rem auto;
+    padding: 2.5rem 2rem;
+  }
+
+  input, button {
+    font-size: 16px;
+  }
+}
