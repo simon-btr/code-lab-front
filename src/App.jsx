@@ -6,7 +6,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import VerifyPage from "./pages/VerifiyPage";
-import HomePage from "./pages/HomePage";
+import DashboardPage from "./pages/Dashboard/DashboardPage";
 
 export default function App() {
   return (
@@ -21,7 +21,7 @@ export default function App() {
             path="/home"
             element={
               <PrivateRoute>
-                <HomePage />
+                <DashboardPage />
               </PrivateRoute>
             }
           />
