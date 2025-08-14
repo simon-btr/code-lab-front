@@ -6,7 +6,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import VerifyPage from "./pages/VerifiyPage";
-import DashboardPage from "./pages/temp/DashboardPage";
+import DashboardPage from "./pages/dashboard/DashboardPage";
 import TodoListsPage from "./pages/todolist/TodoListsPage";
 import TodoListDetailsPage from "./pages/todolist/TodoListDetailsPage";
 import Footer from "./components/footer/Footer";
