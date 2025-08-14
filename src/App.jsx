@@ -7,8 +7,8 @@ import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import VerifyPage from "./pages/VerifiyPage";
 import DashboardPage from "./pages/dashboard/DashboardPage";
-import TodoListsPage from "./pages/TodoList/TodoListsPage";
-import TodoListDetailsPage from "./pages/TodoList/TodoListDetailsPage";
+import TodoListsPage from "./pages/todolist/TodoListsPage";
+import TodoListDetailsPage from "./pages/todolist/TodoListDetailsPage";
 import Footer from "./components/footer/Footer";
 
 export default function App() {
