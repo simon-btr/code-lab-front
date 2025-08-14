@@ -9,6 +9,7 @@ import VerifyPage from "./pages/VerifiyPage";
 import DashboardPage from "./pages/dashboard/DashboardPage";
 import TodoListsPage from "./pages/TodoList/TodoListsPage";
 import TodoListDetailsPage from "./pages/TodoList/TodoListDetailsPage";
+import Footer from "./components/footer/Footer";
 
 export default function App() {
   return (
@@ -45,6 +46,7 @@ export default function App() {
           />
         </Routes>
       </BrowserRouter>
+      <Footer />
     </AuthProvider>
   );
 }
