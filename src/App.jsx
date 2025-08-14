@@ -6,7 +6,9 @@ import PrivateRoute from "./components/PrivateRoute";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import VerifyPage from "./pages/VerifiyPage";
-import DashboardPage from "./pages/Dashboard/DashboardPage";
+import DashboardPage from "./pages/dashboard/DashboardPage";
+import TodoListsPage from "./pages/TodoList/TodoListsPage";
+import TodoListDetailsPage from "./pages/TodoList/TodoListDetailsPage";
 
 export default function App() {
   return (
@@ -22,6 +24,22 @@ export default function App() {
             element={
               <PrivateRoute>
                 <DashboardPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/todolists"
+            element={
+              <PrivateRoute>
+                <TodoListsPage />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/todolists/:id"
+            element={
+              <PrivateRoute>
+                <TodoListDetailsPage />
               </PrivateRoute>
             }
           />

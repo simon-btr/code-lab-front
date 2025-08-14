@@ -8,9 +8,9 @@ export default function Dashboard() {
 
   const projects = [
     {
-      title: "Live Weather Dashboard",
-      description: "Get real-time weather updates.",
-      path: "/weather",
+      title: "To-Do Lists Together !",
+      description: "Share to-do lists with anyone.",
+      path: "/todolists",
     },
     {
       title: "More Projects Coming Soon",

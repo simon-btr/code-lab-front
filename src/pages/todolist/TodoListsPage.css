@@ -1,0 +1,113 @@
+.todolists-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.todolists-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.add-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+}
+
+.add-list input {
+  flex: 1;
+  min-width: 150px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-list button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #0987f2;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.add-list button:hover {
+  background-color: #145a96;
+}
+
+.todolists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.todolist-card {
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.todolist-card h2 {
+  margin: 0 0 10px 0;
+}
+
+.todolist-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.todolist-actions button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.todolist-actions button:first-child {
+  background-color: #0987f2;
+  color: white;
+}
+
+.todolist-actions button:first-child:hover {
+  background-color: #145a96;
+}
+
+.delete-btn {
+  background-color: #DC143C;
+  color: white;
+}
+
+.delete-btn:hover {
+  background-color: #a61e4d;
+}
+
+@media (max-width: 600px) {
+  .todolists-container {
+    padding: 15px;
+  }
+
+  .todolists-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .add-list input,
+  .add-list button {
+    width: 100%;
+  }
+
+  .todolist-actions {
+    flex-direction: column;
+  }
+}
