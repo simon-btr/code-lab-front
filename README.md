@@ -63,7 +63,7 @@ cd code-lab-front
 ### 2️⃣ Installer les dépendances  
 npm install  
 
-#### ️⃣ Configurer l’URL du backend
+#### ️3️⃣ Configurer l’URL du backend
 Dans src/services/api.js, mettre l’URL de votre backend :  
 const API_URL = "http://localhost:8080";  
 
