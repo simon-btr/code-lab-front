@@ -39,6 +39,13 @@ export default function LoginPage() {
 
   return (
     <div className="container">
+      <h1 style={{ textAlign: "center"}}>Code Lab 💻</h1>
+      <p style={{ textAlign: "center", color: "#666", marginBottom: "20px" }}>
+        Simon Boutrouille
+      </p>
+      <p style={{ textAlign: "center", color: "#666", marginBottom: "20px" }}>
+        This platform is a personal project for portfolio purposes.
+      </p>
       <h2>Login</h2>
       <form onSubmit={handleSubmit}>
         <input
