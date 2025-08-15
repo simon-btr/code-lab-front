@@ -1,12 +1,81 @@
-# React + Vite
+# 📋 Collaborative To-Do Lists - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface utilisateur de mon projet code-lab , développée avec **React**.  
+Ce front interagit avec l’API backend pour permettre aux utilisateurs d'accéder à différentes applications tel que gérer leurs listes de tâches collaboratives en temps réel.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Fonctionnalités
 
-## Expanding the ESLint configuration
+- **Authentification**
+  - Inscription et connexion via JWT
+  - Stockage sécurisé du token
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Gestion des listes**
+  - Création, modification et suppression
+  - Ajout et suppression de membres
+  - Changement du titre de la liste
+  - Protection contre les suppressions non autorisées (alerte 403)
+
+- **Gestion des tâches**
+  - Ajout, modification, suppression
+  - Marquer comme complétée / non complétée
+  - Attribution à un membre
+
+- **Interface responsive**
+  - Adaptée aux écrans d’ordinateur, tablettes et téléphones
+  - Navigation simple et claire
+
+---
+
+## 🛠️ Technologies utilisées
+
+- **React 18**
+- React Router DOM
+- Context API (gestion de l'authentification)
+- Axios (requêtes HTTP)
+- CSS (responsive design)
+- Vite (pour le build et le dev server)
+
+---
+
+## 📂 Structure du projet
+
+frontend/  
+│── src/  
+│ ├── components/ # Composants réutilisables (Header, Footer, etc.)  
+│ ├── context/ # AuthContext pour la gestion du token utilisateur  
+│ ├── pages/ # Pages (Login, Register, TodoListsPage, TodoListDetailsPage)  
+│ ├── services/ # API service (Axios wrapper)  
+│ ├── App.jsx # Routing principal  
+│ └── main.jsx # Point d'entrée  
+│── public/  
+│── package.json  
+
+---
+
+## ⚙️ Installation
+
+### 1️⃣ Cloner le dépôt
+git clone https://github.com/simon-btr/code-lab-front  
+cd code-lab-front  
+
+### 2️⃣ Installer les dépendances  
+npm install  
+
+#### ️⃣ Configurer l’URL du backend
+Dans src/services/api.js, mettre l’URL de votre backend :  
+const API_URL = "http://localhost:8080";  
+
+### 4️⃣ Lancer l’application
+npm run dev  
+Le frontend sera accessible sur :  
+http://localhost:5173  
+
+📡 Communication avec le backend  
+Ce frontend est conçu pour fonctionner avec le backend disponible ici :  
+👉 [a link](https://github.com/simon-btr/code-lab-back)
+
+📄 Licence  
+Ce projet est sous licence MIT.  
+Vous êtes libre de l’utiliser, le modifier et le redistribuer à des fins personnelles ou professionnelles, avec attribution.
