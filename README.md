@@ -74,7 +74,7 @@ http://localhost:5173
 
 📡 Communication avec le backend  
 Ce frontend est conçu pour fonctionner avec le backend disponible ici :  
-👉 [a link](https://github.com/simon-btr/code-lab-back)
+👉 [Code-lab-back](https://github.com/simon-btr/code-lab-back)
 
 📄 Licence  
 Ce projet est sous licence MIT.  
